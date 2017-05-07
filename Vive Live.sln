@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vive Live", "Vive Live.csproj", "{70EFAFA7-38F1-138E-0D69-D5F409868CE4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vive Live.Editor", "Vive Live.Editor.csproj", "{F14FBCB5-9E33-A3E3-8170-E5627CED87E4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{70EFAFA7-38F1-138E-0D69-D5F409868CE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70EFAFA7-38F1-138E-0D69-D5F409868CE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70EFAFA7-38F1-138E-0D69-D5F409868CE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70EFAFA7-38F1-138E-0D69-D5F409868CE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F14FBCB5-9E33-A3E3-8170-E5627CED87E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F14FBCB5-9E33-A3E3-8170-E5627CED87E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F14FBCB5-9E33-A3E3-8170-E5627CED87E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F14FBCB5-9E33-A3E3-8170-E5627CED87E4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
