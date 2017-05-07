@@ -3,7 +3,7 @@ An HTC Vive via OSC to Max for Live and Ableton Live Musical Instrument
 
 Created by Ryan Walker and Oliver Macro during a creative session in Dunedin, New Zealand
 
-HTC Vive controllers are used in combination with [insert max for live osc plugin name] to take incoming Open Sound Control (OSC) signals from the controllers positional information, and is then routed into various audio Oscilators.
+HTC Vive controllers are used in combination with [insert max for live osc plugin name] to take incoming Open Sound Control (OSC) signals from the controllers positional information, and is then routed into various audio Oscillators.
 
 # Demo
 
