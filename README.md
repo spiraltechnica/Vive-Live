@@ -37,7 +37,7 @@ Currently 2 vive controllers are supported, and they send the following data via
 * /vc2/z floating point number, no bounds as yet. Relative to the middle position in the SteamVR tracked environment.
 * /vc2/trigger 0.0f for unclicked, 1.0f for clicked;
 
-Ableton Live Project contains two tracks, each containing a simple mono synth patch. Ethno Tekh's '[Tekh Map](http://www.ethnotekh.com/software/tekh-map/)' Max for Live devices handles routing of the HTC Vive controllers OSC data to each synth. 
+Ableton Live Project contains two tracks, each containing a simple mono synth patch. Ethno Tekh's '[Tekh Map](http://www.ethnotekh.com/software/tekh-map/)' Max for Live devices handle routing of the HTC Vive controllers OSC data to each synth. 
 
 Vertical Axis - Note/Pitch
 Horizontal Axis - Voice Panning
