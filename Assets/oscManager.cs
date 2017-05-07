@@ -65,8 +65,15 @@ public class oscManager : MonoBehaviour {
 
         rightTrackedCont.TriggerClicked += HandleTriggerClicked;
         leftTrackedCont.TriggerClicked += HandleTriggerClicked;
+
         rightTrackedCont.TriggerUnclicked += HandleTriggerUnclicked;
         leftTrackedCont.TriggerUnclicked += HandleTriggerUnclicked;
+
+        rightTrackedCont.Gripped += HandleGripped;
+        leftTrackedCont.Gripped += HandleGripped;
+
+        rightTrackedCont.Ungripped += HandleUngripped;
+        leftTrackedCont.Ungripped += HandleUngripped;
 
     }
 
@@ -77,6 +84,38 @@ public class oscManager : MonoBehaviour {
         rightTrackedCont.TriggerUnclicked -= HandleTriggerUnclicked;
         leftTrackedCont.TriggerUnclicked -= HandleTriggerUnclicked;
 
+
+        rightTrackedCont.Gripped -= HandleGripped;
+        leftTrackedCont.Gripped -= HandleGripped;
+
+        rightTrackedCont.Ungripped -= HandleUngripped;
+        leftTrackedCont.Ungripped -= HandleUngripped;
+    }
+
+    private void HandleGripped(object sender, ClickedEventArgs e)
+    {
+
+        if (e.controllerIndex == rightTrackedCont.controllerIndex)
+        {
+            OSCHandler.Instance.SendMessageToClient("Live", "/vc1/gripped", 1.0f);
+        }
+        if (e.controllerIndex == leftTrackedCont.controllerIndex)
+        {
+            OSCHandler.Instance.SendMessageToClient("Live", "/vc2/gripped", 1.0f);
+        }
+    }
+
+    private void HandleUngripped(object sender, ClickedEventArgs e)
+    {
+
+        if (e.controllerIndex == rightTrackedCont.controllerIndex)
+        {
+            OSCHandler.Instance.SendMessageToClient("Live", "/vc1/gripped", 0.0f);
+        }
+        if (e.controllerIndex == leftTrackedCont.controllerIndex)
+        {
+            OSCHandler.Instance.SendMessageToClient("Live", "/vc2/gripped", 0.0f);
+        }
     }
 
     private void HandleTriggerClicked(object sender, ClickedEventArgs e)
