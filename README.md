@@ -39,10 +39,10 @@ Currently 2 vive controllers are supported, and they send the following data via
 
 Ableton Live Project contains two tracks, each containing a simple mono synth patch. Ethno Tekh's '[Tekh Map](http://www.ethnotekh.com/software/tekh-map/)' Max for Live devices handle routing of the HTC Vive controllers OSC data to each synth. 
 
-Vertical Axis - Note/Pitch
-Horizontal Axis - Voice Panning
-Depth - Filter Resonance
-Trigger Button - Note on
-Grip Pads - Note off
+* Vertical Axis - Note/Pitch
+* Horizontal Axis - Voice Panning
+* Depth - Filter Resonance
+* Trigger Button - Note on
+* Grip Pads - Note off
 
 The patches function as rudimentary theremin-esque sound generators.
