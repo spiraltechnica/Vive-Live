@@ -40,6 +40,8 @@ public class oscManager : MonoBehaviour {
         SteamVR_Controller.Device leftDevice = SteamVR_Controller.Input((int)leftTrackedObj.index);
         Vector3 rightPos = rightDevice.transform.pos;
         Vector3 leftPos = leftDevice.transform.pos;
+        Quaternion rightRot = rightDevice.transform.rot;
+        Quaternion leftRot = leftDevice.transform.rot;
 
         /* float minDistance = 1f;
 
@@ -54,10 +56,16 @@ public class oscManager : MonoBehaviour {
         OSCHandler.Instance.SendMessageToClient("Live", "/vc1/x", rightPos.x);
         OSCHandler.Instance.SendMessageToClient("Live", "/vc1/y", rightPos.y);
         OSCHandler.Instance.SendMessageToClient("Live", "/vc1/z", rightPos.z);
+        OSCHandler.Instance.SendMessageToClient("Live", "/vc1/rx", rightRot.x);
+        OSCHandler.Instance.SendMessageToClient("Live", "/vc1/ry", rightRot.y);
+        OSCHandler.Instance.SendMessageToClient("Live", "/vc1/rz", rightRot.z);
 
         OSCHandler.Instance.SendMessageToClient("Live", "/vc2/x", leftPos.x);
         OSCHandler.Instance.SendMessageToClient("Live", "/vc2/y", leftPos.y);
         OSCHandler.Instance.SendMessageToClient("Live", "/vc2/z", leftPos.z);
+        OSCHandler.Instance.SendMessageToClient("Live", "/vc2/rx", leftRot.x);
+        OSCHandler.Instance.SendMessageToClient("Live", "/vc2/ry", leftRot.y);
+        OSCHandler.Instance.SendMessageToClient("Live", "/vc2/rz", leftRot.z);
     }
 
     private void OnEnable()
